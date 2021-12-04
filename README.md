@@ -321,83 +321,69 @@ public class Finish : MonoBehaviour
 }
 ```
 
-### Implementation of the spaceship control system
-#### Touch Control
-Here we have the class "TouchMovementControl", which implements the logic of touch control. With the touch control, you can control the object of the player spaceship, pointing your finger across the device screen its motion vector. In the method "Awake()" we we set the direction value to zero. Awake() is called to initialize variables or states before the application start.
+### Other scripts: 
+    
+    
+#### StartMenu
+    Allows to enter the game.
 ```
-private void Awake()
+    public class StartMenu : MonoBehaviour
+{
+    public void StartGame()
     {
-        direction = Vector2.zero;
-        touched = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
+}
 ```
-Then methods for handling events are implemented: 
-
-OnPointerDown() is called when user taps on the screen and takes an PointerEventData object as an argument.
+    
+#### EndMenu 
+    Allows to quit an application.
 ```
-public void OnPointerDown(PointerEventData eventData)
+public class EndMenu : MonoBehaviour
+{
+    public void Quit()
     {
-        if (!touched)
+        Application.Quit();
+    }
+}
+```
+#### Rotate
+    Defines how many times we will rotate 360deg per second. Special class that has been used for saw rotation effect.
+```
+    public class Rotate : MonoBehaviour
+{
+    [SerializeField] private float speed = 2f; 
+    private void Update()
+    {
+        transform.Rotate(0, 0, 360 * speed * Time.deltaTime);
+    }
+}
+
+```
+    
+#### WaypointFollower
+    Special class that has been used for checking if cuurent waypoint and platform has a distance of .1f we know we touching it (used indexes of the waypoints). This script allows to move saw object from one waypoint to another with the specified speed (2 game units in my case).
+```
+    public class WaypointFollower : MonoBehaviour
+{
+
+    [SerializeField] private GameObject[] waypoints;
+    private int currentWaypointIndex = 0; // 1st index for 1st waypoint
+
+    [SerializeField] private float speed = 2f;
+    private void Update()
+    {
+        if (Vector2.Distance(waypoints[currentWaypointIndex].transform.position, transform.position) < .1f) 
         {
-            origin = eventData.position;
-            touched = true;
-            pointerID = eventData.pointerId;  // get status and click number
+            currentWaypointIndex++;
+            if (currentWaypointIndex >= waypoints.Length)
+            {
+                currentWaypointIndex = 0;
+            }
         }
+        transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, Time.deltaTime * speed); 
+        
     }
-```
-OnDrag() is called to handle finger movement across the screen and takes an PointerEventData object as an argument.
-```
-    public void OnDrag(PointerEventData eventData)
-    {
-        if (eventData.pointerId == pointerID)  // check if it is the same touch
-        {
-            Vector2 currentPosition = eventData.position;
-            Vector2 directionResult = currentPosition - origin;
-            direction = directionResult.normalized;
-        }
-    }
-```
-OnPointerUp() is called when user's touch was released.
-```
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        if (eventData.pointerId == pointerID)
-        {
-            direction = Vector2.zero;  // stop moving
-        }
-    }
-```
-And finally, Method GetDirection() returns a position of the moved object. Here we use MoveTowards method, that moves a point current towards target. By updating an object’s position each frame using the position calculated by this function, you can move it towards the target smoothly.
-```
-    public Vector2 GetDirection()
-    {
-        smoothDirection = Vector2.MoveTowards(smoothDirection, direction, smoothness);
-        return smoothDirection;
-    }
-```
-We call this function in "PlayerController" class:
-```
-    Vector2 direction = touchControl.GetDirection();
-
-    Vector3 movement = new Vector3(direction.x, 0.0f, direction.y);
-    rigidbody.velocity = movement * speed;
-```
-
-#### Accelerometer Control
-First of all, you need to calibrate the accelerometer:
-```
-    public void CalibrateAccelerometer()
-    {
-        Vector3 accelerationSnapshot = Input.acceleration;
-        Quaternion rotateQuaternion = Quaternion.FromToRotation(new Vector3(0.0f, 0.0f, -1.0f), accelerationSnapshot);
-        calibrationQuaternion = Quaternion.Inverse(rotateQuaternion);
-    }
-```
-Then in the method "FixedUpdate" we get the data for Vector3, taken from the accelerometer and using the velocity component and the speed variable, we set the spaceship in movement:
-```
-    Vector3 accelerationRaw = Input.acceleration;
-    Vector3 acceleration = FixedAcceleraton(accelerationRaw);
-
-    Vector3 movement = new Vector3(acceleration.x, 0.0f, acceleration.y);
-    rigidbody.velocity = movement * speed;
+}
 ```
