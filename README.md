@@ -8,7 +8,7 @@ The game have been created for educational and entertainment purposes to get som
 
 
 Learned and mastered:
-    <div style = "border: 1px solid black; width: auto; height: auto;">
+    <div style = "border: 1px solid red; width: auto; height: auto;">
 * Possibilities of the development environment "Unity" and how to use it to create cross-platform games
 * Basic constructs and methods of the C# language (including those that are most often used to create scripts)
 * Creation of mathematical regularities of the trajectory of movement of objects using C#
