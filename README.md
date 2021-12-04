@@ -15,7 +15,7 @@ Learned and mastered:
 * Debugging, testing, building project (Android & Windows)
 * OOP principles
 
-![alt text](https://github.com/[yurii-bel]/[hesitative_frog_2d]/blob/[master]/images/preview_img.jpg?raw=true)
+![alt text](https://github.com/[yurii-bel]/[hesitative_frog_2d]/blob/[master]/preview_img.jpg?raw=true)
 
 # Rules and game overview:
 
