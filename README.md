@@ -325,7 +325,9 @@ public class Finish : MonoBehaviour
     
     
 #### StartMenu
-    Allows to enter the game.
+    
+Allows to enter the game.
+    
 ```
     public class StartMenu : MonoBehaviour
 {
@@ -338,7 +340,9 @@ public class Finish : MonoBehaviour
 ```
     
 #### EndMenu 
-    Allows to quit an application.
+    
+Allows to quit an application.
+    
 ```
 public class EndMenu : MonoBehaviour
 {
@@ -350,7 +354,9 @@ public class EndMenu : MonoBehaviour
 ```
     
 #### Rotate
-    Defines how many times we will rotate 360deg per second. Special class that has been used for saw rotation effect.
+    
+Defines how many times we will rotate 360deg per second. Special class that has been used for saw rotation effect.
+    
 ```
     public class Rotate : MonoBehaviour
 {
@@ -365,7 +371,7 @@ public class EndMenu : MonoBehaviour
     
 #### WaypointFollower
     
-    Special class that has been used for checking if cuurent waypoint and platform has a distance of .1f we know we touching it (used indexes of the waypoints). This script allows to move saw object from one waypoint to another with the specified speed (2 game units in my case).
+Special class that has been used for checking if cuurent waypoint and platform has a distance of .1f we know we touching it (used indexes of the waypoints). This script allows to move saw object from one waypoint to another with the specified speed (2 game units in my case).
     
 ```
     public class WaypointFollower : MonoBehaviour
