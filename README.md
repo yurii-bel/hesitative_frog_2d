@@ -197,7 +197,69 @@ public class PlayerMovement : MonoBehaviour
 }
 ```
 
-The "increment" variable is used as an argument to the function. When calling the function to increase the current number of points, we indicate the exact value, for example, 10, then 10 will be added to the current value. 
+### Item Collector
+
+Here, we add collectible items to our game and display a counter in the UI.
+```
+public class ItemCollector : MonoBehaviour
+{
+    private int kiwis = 0;
+
+    [SerializeField] private Text kiwisText;
+    [SerializeField] private AudioSource collectionSoundEffect;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Kiwi"))
+        {
+            collectionSoundEffect.Play();
+            Destroy(collision.gameObject); // Destroy kiwi
+            kiwis++;
+            kiwisText.text = "Kiwis: " + kiwis;
+        }
+    }
+}
+
+```
+### Player Life
+
+In the following class "PlayerLife" we need to perform the player's death when it collides with a trap and restart the level using the SceneManager.
+```
+public class PlayerLife : MonoBehaviour
+{
+    private Rigidbody2D rb;
+    private Animator anim;
+
+    [SerializeField] private AudioSource deathSoundEffect;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        deathSoundEffect.Play();
+        rb.bodyType = RigidbodyType2D.Static;
+        anim.SetTrigger("death");
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+}
+
+```
 
 ### Implementation of the spaceship control system
 #### Touch Control
