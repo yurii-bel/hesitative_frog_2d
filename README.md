@@ -60,12 +60,14 @@ The difficulty increases slightly with each next level.
 
 ## The start of the game  
 To start the game you have to click the "start" button. 
-<img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600" align="left">
+
+<img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600">
 
 ## The end game conditions
 By now, the player has only one life. It means if the player collides with a trap, the current level will be restarted.
 To end the game you have to complete all levels. 
 NOTE: you have to click the "quit" button to exit the game.
+
 <img src="https://i.postimg.cc/KzG2fQ1p/Screenshot-7.png" width="600">
 
 ### Control mechanics 
