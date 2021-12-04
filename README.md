@@ -28,7 +28,7 @@ The following steps have been done to complete the game creation:
 * to add more levels to our game by creating additional scenes.
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
 
-# Features
+## Features
 * Smooth and precise movement
 * Allows for jumps
 * Easily add animations
@@ -36,7 +36,7 @@ The following steps have been done to complete the game creation:
 * Moving platforms
 * Pick up objects
 
-# Planned Features
+## Planned Features
 * Ladders/Ropes
 * Crumbling platforms
 * Checkpoint system
