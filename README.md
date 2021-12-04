@@ -102,7 +102,7 @@ NOTE: [SerializeField] is used to allow us change the chosen parameter directly 
 
 ### Player movement
 
-This player movement code using the Unity Input Manager together with a Rigidbody2D and velocity; setting up a running animation for our player using a boolean Animator parameter; adding more animations to our animation state machine and toggle between them using an enum; taking care that our player can only jump while he is standing on the ground. Here, I left some comments to give you better idea about what is going oon here.
+This player movement code using the Unity Input Manager together with a Rigidbody2D and velocity; setting up a running animation for our player using a boolean Animator parameter; adding more animations to our animation state machine and toggle between them using an enum; taking care that our player can only jump while he is standing on the ground. Here, I left some comments to give you better idea about what is going on here.
 ```
 public class PlayerMovement : MonoBehaviour
 {
