@@ -13,7 +13,7 @@ Learned and mastered:
 
 <img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="800">
 
-####The following steps have been done to complete the game creation:
+#### The following steps have been done to complete the game creation:
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
 * to create a Tile Palette in Unity and start drawing our Tilemap.
 * to continue writing the player movement code using the Unity Input Manager together with a Rigidbody2D and velocity.
