@@ -60,7 +60,7 @@ The difficulty increases slightly with each next level.
 
 ## The start of the game  
 To start the game you have to click the "start" button. 
-<img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600">
+<img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600" align="left">
 
 ## The end game conditions
 By now, the player has only one life. It means if the player collides with a trap, the current level will be restarted.
