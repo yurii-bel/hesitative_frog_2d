@@ -11,7 +11,7 @@ Learned and mastered:
 * Debugging, testing, building project
 * OOP principles
 
-<img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="400">
+<img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="600">
 
 The following steps have been done to complete the game creation:
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
@@ -50,14 +50,14 @@ The following steps have been done to complete the game creation:
 
 # Rules and game overview:
 
-### Goal 
-Pass the waves and earn as many points as possible. Points are awarded for killing enemies and obstacles (like asteroids). 
+## Goal 
+Achieve the finish flag of the level and collect as many kiwis (points) as possible.
 
-### Game mechanics
-The game screen contains the player object (spaceship) and obstacles (asteroids and enemy spaceships) that move towards the player (from top to down of the playing area). 
-Spawn of obstacles on the playing area is presented in the form of waves. 
+## Game mechanics
+The "hesitated frog" game screen contains the player object (frog) and by now static and moving traps (you will die immidiately if you touch them). 
+The difficulty increases slightly with each next level.
 
-<img src="https://i.imgur.com/tCnsqB3.png" width="400">
+<img src="https://i.postimg.cc/BbSd5vwr/Screenshot-6.png" width="600">
 
 With each new wave, the number of asteroids increases, and the spawn rate decreases (it means that more obstacles will spawn).
 
