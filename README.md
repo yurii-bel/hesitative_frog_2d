@@ -15,7 +15,7 @@ Learned and mastered:
 * Debugging, testing, building project (Android & Windows)
 * OOP principles
 * 
-<a href="url"><img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" align="left" height="250" width="250" ></a>
+<a href="url"><img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" align="left"  width="400" ></a>
 ![alt text](https://i.postimg.cc/wjNV3V4P/preview-img.jpg  | width=100)
 
 ![image](https://i.postimg.cc/wjNV3V4P/preview-img.jpg = 250x250)
