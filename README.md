@@ -17,6 +17,8 @@ Learned and mastered:
 
 ![alt text](https://i.postimg.cc/wjNV3V4P/preview-img.jpg  | width=100)
 
+![image](https://i.postimg.cc/wjNV3V4P/preview-img.jpg = 250x250)
+
 
 # Rules and game overview:
 
