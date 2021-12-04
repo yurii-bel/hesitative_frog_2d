@@ -261,6 +261,66 @@ public class PlayerLife : MonoBehaviour
 
 ```
 
+### Sticky Platform
+
+Here, we are checking when when we touch the trigger (platform collider 2D). We did it to avoid bugs and glitches, when player is stuck in a platform corners...
+
+```
+public class StickyPlatform : MonoBehaviour
+{
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.transform.SetParent(transform);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.transform.SetParent(null);
+        }
+    }
+
+}
+```
+
+### Finish
+
+Finally, we are checking if the player reaches the finish flag. Using the Collider2D collision here and taking care of the relevant sound effects with the help of <AudioSource> component.
+```
+public class Finish : MonoBehaviour
+{
+    private AudioSource finishSound;
+
+    private bool levelCompleted = false;
+
+    private void Start()
+    {
+        finishSound = GetComponent<AudioSource>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player" && !levelCompleted)
+        {
+            finishSound.Play();
+            levelCompleted = true;
+            Invoke("CompleteLevel", 2f);
+        }
+    }
+
+    private void CompleteLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    }
+}
+```
+
 ### Implementation of the spaceship control system
 #### Touch Control
 Here we have the class "TouchMovementControl", which implements the logic of touch control. With the touch control, you can control the object of the player spaceship, pointing your finger across the device screen its motion vector. In the method "Awake()" we we set the direction value to zero. Awake() is called to initialize variables or states before the application start.
