@@ -56,7 +56,6 @@ Achieve the finish flag of the level and collect as many kiwis (points) as possi
 ## Game mechanics
 The "hesitated frog" game screen contains the player object (frog) and by now static and moving traps (you will die immidiately if you touch them). 
 The difficulty increases slightly with each next level.
-
 <img src="https://i.postimg.cc/BbSd5vwr/Screenshot-6.png" width="600">
 
 ## The start of the game  
@@ -68,8 +67,6 @@ By now, the player has only one life. It means if the player collides with a tra
 To end the game you have to complete all levels. 
 NOTE: you have to click the "quit" button to exit the game.
 <img src="https://i.postimg.cc/KzG2fQ1p/Screenshot-7.png" width="600">
-
-<img src="https://i.imgur.com/KGoljUQ.png" height="500">
 
 ### Control mechanics 
 
