@@ -11,7 +11,7 @@ Learned and mastered:
 * Debugging, testing, building project
 * OOP principles
 
-<img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="600">
+<img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="800">
 
 The following steps have been done to complete the game creation:
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
