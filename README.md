@@ -4,14 +4,11 @@
 
 The game have been created for educational and entertainment purposes to get some practice.
 
-
-
-
 Learned and mastered:
-* Possibilities of the development environment "Unity" and how to use it to create cross-platform games
-* Basic constructs and methods of the C# language (including those that are most often used to create scripts)
-* Creation of mathematical regularities of the trajectory of movement of objects using C#
-* Debugging, testing, building project (Android & Windows)
+* Defferent possibilities of the "Unity" environment and how to use it to create 2D games
+* Basic C# methods and principles
+* Creation of mathematical regularities for moving objects using C# language
+* Debugging, testing, building project
 * OOP principles
 
 <img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="400">
@@ -31,6 +28,24 @@ The following steps have been done to complete the game creation:
 * to add more levels to our game by creating additional scenes.
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
 
+# Features
+* Smooth and precise movement
+* Allows for jumps
+* Easily add animations
+* One way platforms
+* Moving platforms
+* Pick up objects
+
+# Planned Features
+* Ladders/Ropes
+* Crumbling platforms
+* Checkpoint system
+* Environment hazards
+* Pressure plates/levers/other triggers
+* Ledge grabs
+* Running
+* Ducking/Crawling
+* Basic combat templates
 
 # Rules and game overview:
 
