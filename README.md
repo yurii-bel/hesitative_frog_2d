@@ -35,6 +35,7 @@ The following steps have been done to complete the game creation:
 * One way platforms
 * Moving platforms
 * Pick up objects
+* Static and moving traps 
 
 ## Planned Features
 * Ladders/Ropes
