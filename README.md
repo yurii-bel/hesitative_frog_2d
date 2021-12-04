@@ -14,7 +14,8 @@ Learned and mastered:
 * Creation of mathematical regularities of the trajectory of movement of objects using C#
 * Debugging, testing, building project (Android & Windows)
 * OOP principles
-
+* 
+<a href="url"><img src="http://url.to/image.png" align="left" height="250" width="250" ></a>
 ![alt text](https://i.postimg.cc/wjNV3V4P/preview-img.jpg  | width=100)
 
 ![image](https://i.postimg.cc/wjNV3V4P/preview-img.jpg = 250x250)
