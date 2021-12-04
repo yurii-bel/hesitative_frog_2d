@@ -59,19 +59,15 @@ The difficulty increases slightly with each next level.
 
 <img src="https://i.postimg.cc/BbSd5vwr/Screenshot-6.png" width="600">
 
-With each new wave, the number of asteroids increases, and the spawn rate decreases (it means that more obstacles will spawn).
+## The start of the game  
+To start the game you have to click the "start" button. 
+<img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600">
 
-Here we have two GUI elements (left and right upper corner of the screen). The left element, which is represented as a circle with a number, displays how many asteroids will appear on the playing area (I remind that this number increases by 5 each wave). The right one, which is represented as a rectangle, shows the current number of points earned by the player (Destroy as many obstacles on your way as possible). More details about the scoring system are written [in the project code structure](#scoring-system)).
-
-<img src="https://i.imgur.com/JJXGDBD.png" width="400">
-
-So far, enemy spaceships are classified by color and they are no different from each other, but in the future, color will indicate the rank of the enemy. Each rank will have its own characteristics and properties: color, health, shooting mode (e.g. shooting with two bullets).
-
-<img src="https://i.imgur.com/9vpg9uK.png" width="400">
-
-### Conditions to end the game
-
-The player only has one life. If the player collides with an asteroid, an enemy spaceship or the player is shot by its bullet, the game will be over.
+## The end game conditions
+By now, the player has only one life. It means if the player collides with a trap, the current level will be restarted.
+To end the game you have to complete all levels. 
+NOTE: you have to click the "quit" button to exit the game.
+<img src="https://i.postimg.cc/KzG2fQ1p/Screenshot-7.png" width="600">
 
 <img src="https://i.imgur.com/KGoljUQ.png" height="500">
 
