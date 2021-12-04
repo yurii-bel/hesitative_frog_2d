@@ -13,7 +13,7 @@ Learned and mastered:
 
 <img src="https://i.postimg.cc/wjNV3V4P/preview-img.jpg" width="800">
 
-The following steps have been done to complete the game creation:
+####The following steps have been done to complete the game creation:
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
 * to create a Tile Palette in Unity and start drawing our Tilemap.
 * to continue writing the player movement code using the Unity Input Manager together with a Rigidbody2D and velocity.
@@ -29,6 +29,7 @@ The following steps have been done to complete the game creation:
 * to add a start and end game screen to our game by creating scenes with a canvas and buttons.
 
 ## Features
+
 * Smooth and precise movement
 * Allows for jumps
 * Easily add animations
@@ -38,6 +39,7 @@ The following steps have been done to complete the game creation:
 * Static and moving traps 
 
 ## Planned Features
+
 * Ladders/Ropes
 * Crumbling platforms
 * Checkpoint system
@@ -51,19 +53,23 @@ The following steps have been done to complete the game creation:
 # Rules and game overview:
 
 ## Goal 
+
 Achieve the finish flag of the level and collect as many kiwis (points) as possible.
 
 ## Game mechanics
+
 The "hesitated frog" game screen contains the player object (frog) and by now static and moving traps (you will die immidiately if you touch them). 
 The difficulty increases slightly with each next level.
 <img src="https://i.postimg.cc/BbSd5vwr/Screenshot-6.png" width="600">
 
 ## The start of the game  
+
 To start the game you have to click the "start" button. 
 
 <img src="https://i.postimg.cc/XqxXxpNd/Screenshot-8.png" width="600">
 
 ## The end game conditions
+
 By now, the player has only one life. It means if the player collides with a trap, the current level will be restarted.
 To end the game you have to complete all levels. 
 NOTE: you have to click the "quit" button to exit the game.
