@@ -348,6 +348,7 @@ public class EndMenu : MonoBehaviour
     }
 }
 ```
+    
 #### Rotate
     Defines how many times we will rotate 360deg per second. Special class that has been used for saw rotation effect.
 ```
@@ -363,7 +364,9 @@ public class EndMenu : MonoBehaviour
 ```
     
 #### WaypointFollower
+    
     Special class that has been used for checking if cuurent waypoint and platform has a distance of .1f we know we touching it (used indexes of the waypoints). This script allows to move saw object from one waypoint to another with the specified speed (2 game units in my case).
+    
 ```
     public class WaypointFollower : MonoBehaviour
 {
