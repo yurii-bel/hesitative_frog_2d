@@ -5,7 +5,7 @@
 The game have been created for educational and entertainment purposes to get some practice.
 
 Learned and mastered:
-* Defferent possibilities of the "Unity" environment and how to use it to create 2D games
+* Different possibilities of the "Unity" environment and how to use it to create 2D games
 * Basic C# methods and principles
 * Creation of mathematical regularities for moving objects using C# language
 * Debugging, testing, building project
